@@ -1,117 +1,121 @@
-# EHCOMM-E-COMMERCE
-
-## Table of Contents
-- [Description](#description)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-  - [Products](#products)
-  - [Categories](#categories)
-  - [Tags](#tags)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+# Ehcom-E-Commerce
 
 ## Description
-EHCOMM-E-COMMERCE is a full-featured e-commerce application designed to facilitate product management, categorization, and tagging. Built with Node.js, Express, and Sequelize, this application provides a robust API for managing an online store.
 
-## User Story
-As an admin user, I want to manage products, categories, and tags, so that I can keep the online store organized and up to date.
+Ehcom-E-Commerce is an e-commerce application that allows users to manage products, categories, and tags. It provides a RESTful API for CRUD operations on products, categories, and tags, enabling efficient management of an online store.
 
-## Acceptance Criteria
-- **Product Management**:
-  - Admin can create a new product with valid details.
-  - Admin can retrieve a list of all products.
-  - Admin can update an existing product's details.
-  - Admin can delete a product from the database.
-  
-- **Category Management**:
-  - Admin can create a new category.
-  - Admin can retrieve all categories.
-  - Admin can update an existing category.
-  - Admin can delete a category.
+## Table of Contents
 
-- **Tagging System**:
-  - Admin can create a new tag.
-  - Admin can retrieve all tags.
-  - Admin can update an existing tag.
-  - Admin can delete a tag.
-
-## Features
-- **Product Management**: Create, read, update, and delete products.
-- **Category Management**: Organize products into categories.
-- **Tagging System**: Add tags to products for better searchability.
-- **Sequelize ORM**: Simplifies database interactions with an intuitive API.
-
-## Technologies Used
-- Node.js
-- Express
-- Sequelize
-- MySQL
-- JavaScript
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Routes](#api-routes)
+- [Database Structure](#database-structure)
+- [Video Walkthrough](#video-walkthrough)
+- [Links](#links)
+- [Contributing](#contributing)
 
 ## Installation
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/EHCOMM-E-COMMERCE.git
+   git clone https://github.com/yourusername/Ehcom-E-Commerce.git
    ```
-2. Navigate into the project directory:
+
+2. Navigate to the project directory:
    ```bash
-   cd EHCOMM-E-COMMERCE
+   cd Ehcom-E-Commerce
    ```
-3. Install the required dependencies:
+
+3. Install the dependencies:
    ```bash
    npm install
    ```
-4. Set up your database by importing the `schema.sql`:
-   ```sql
-   -- SQL commands from schema.sql
+
+4. Create a `.env` file in the root directory and add your database connection details:
+   ```plaintext
+   DB_NAME='ecommerce_db'
+   DB_USER='your_username'
+   DB_PASSWORD='your_password'
+   DB_URL='your_database_url'  # Optional
    ```
 
-## Usage
-1. Start the application:
+5. Run the database seeders:
+   ```bash
+   npm run seed
+   ```
+
+6. Start the server:
    ```bash
    npm start
    ```
-2. Use tools like Postman or Insomnia to test the API endpoints:
-   - **GET /api/products**: Retrieve all products.
-   - **GET /api/products/:id**: Retrieve a single product by ID.
-   - **POST /api/products**: Create a new product.
-   - **PUT /api/products/:id**: Update an existing product.
-   - **DELETE /api/products/:id**: Delete a product by ID.
 
-## API Endpoints
-### Products
-- **GET /api/products**
-- **GET /api/products/:id**
-- **POST /api/products**
-- **PUT /api/products/:id**
-- **DELETE /api/products/:id**
+## Usage
 
-### Categories
-- **GET /api/categories**
-- **GET /api/categories/:id**
-- **POST /api/categories**
-- **PUT /api/categories/:id**
-- **DELETE /api/categories/:id**
+Once the server is running, you can interact with the API using tools like Postman or cURL. 
 
-### Tags
-- **GET /api/tags**
-- **GET /api/tags/:id**
-- **POST /api/tags**
-- **PUT /api/tags/:id**
-- **DELETE /api/tags/:id**
+### Example Endpoints:
+
+- **Categories**:
+  - `GET /api/categories` - Retrieve all categories
+  - `POST /api/categories` - Create a new category
+  - `PUT /api/categories/:id` - Update a category by ID
+  - `DELETE /api/categories/:id` - Delete a category by ID
+
+- **Products**:
+  - `GET /api/products` - Retrieve all products
+  - `POST /api/products` - Create a new product
+  - `PUT /api/products/:id` - Update a product by ID
+  - `DELETE /api/products/:id` - Delete a product by ID
+
+- **Tags**:
+  - `GET /api/tags` - Retrieve all tags
+  - `POST /api/tags` - Create a new tag
+  - `PUT /api/tags/:id` - Update a tag by ID
+  - `DELETE /api/tags/:id` - Delete a tag by ID
+
+## API Routes
+
+The API is structured as follows:
+
+- `/api/categories`
+- `/api/products`
+- `/api/tags`
+
+Each route supports standard HTTP methods: GET, POST, PUT, and DELETE.
+
+## Database Structure
+
+The database consists of the following tables:
+
+- **Categories**: Contains category information.
+- **Products**: Contains product information linked to categories.
+- **Tags**: Contains tag information for products.
+- **ProductTags**: A join table that facilitates the many-to-many relationship between products and tags.
+
+## Video Walkthrough
+
+Watch the video walkthrough for a demonstration of the application:
+[Video Walkthrough Example](https://www.example.com)
+
+## Links
+
+- GitHub Repository: [Ehcom-E-Commerce GitHub](https://github.com/yourusername/Ehcom-E-Commerce)
 
 ## Contributing
-If you would like to contribute to this project, please fork the repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! Please follow these steps:
 
-## Acknowledgments
-- Inspiration from various e-commerce platforms.
-- Sequelize documentation for ORM usage.
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a pull request.
