@@ -18,7 +18,7 @@ Ehcom-E-Commerce is an e-commerce application that allows users to manage produc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Ehcom-E-Commerce.git
+   git clone https://github.com/awb2987/Ehcom-E-Commerce.git
    ```
 
 2. Navigate to the project directory:
@@ -99,7 +99,7 @@ Watch the video walkthrough for a demonstration of the application:
 
 ## Links
 
-- GitHub Repository: [Ehcom-E-Commerce GitHub](https://github.com/yourusername/Ehcom-E-Commerce)
+- GitHub Repository: [Ehcom-E-Commerce GitHub](https://github.com/awb2987/Ehcom-E-Commerce)
 
 ## Contributing
 
