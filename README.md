@@ -98,6 +98,8 @@ Watch the video walkthrough for a demonstration of the application:
 [Video Walkthrough](https://drive.google.com/file/d/1jjnzOPPkG4EWf_4tV1wkEf9K2AcG5bx4/view)
 Backup Link to Walkthrough Video [Backup Tutorial Link](https://drive.google.com/file/d/1jjnzOPPkG4EWf_4tV1wkEf9K2AcG5bx4/view?usp=sharing)
 
+![Project Screenshot](./Images/Screenshot%20of%20Schema.png)
+
 ## Links
 
 - GitHub Repository: [Ehcom-E-Commerce GitHub](https://github.com/awb2987/Ehcom-E-Commerce)
