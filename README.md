@@ -95,7 +95,8 @@ The database consists of the following tables:
 ## Video Walkthrough
 
 Watch the video walkthrough for a demonstration of the application:
-[Video Walkthrough Example](https://www.example.com)
+[Video Walkthrough](https://drive.google.com/file/d/1jjnzOPPkG4EWf_4tV1wkEf9K2AcG5bx4/view)
+Backup Link to Walkthrough Video [Backup Tutorial Link](https://drive.google.com/file/d/1jjnzOPPkG4EWf_4tV1wkEf9K2AcG5bx4/view?usp=sharing)
 
 ## Links
 
