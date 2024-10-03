@@ -1,11 +1,11 @@
 -- DROP DATABASE
-DROP DATABASE IF EXISTS ecommerce_db;
+DROP DATABASE IF EXISTS Ehcom-E-Commerce_db;
 
 -- CREATE DATABASE
-CREATE DATABASE ecommerce_db;
+CREATE DATABASE Ehcom-E-Commerce_db;
 
 -- USE the created database
-USE ecommerce_db;
+USE Ehcom-E-Commerce_db;
 
 -- CREATE TABLES
 
